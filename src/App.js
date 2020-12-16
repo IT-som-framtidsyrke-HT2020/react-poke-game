@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Pokecard from "./Pokecard";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Pokecard />
+      </div>
+    );
+  }
 }
 
 export default App;
+
+/*
+In this task you need to inlcude 3 components. Include the
+following:
+
+App - App should only render a single component
+
+Pokecard - This component should show a single pokemon
+
+Pokedex - This component should be provided via props an array
+of objects that describes different pokemon cards. Use default
+props for this task and render the different pokemon cards by
+using a loop.
+
+A pokecard should have the props:
+- id
+- name
+- type
+- exp
+*/
