@@ -7,3 +7,5 @@ class Pokedex extends Component {
 }
 
 export default Pokedex;
+
+// props: id, name, type, exp
