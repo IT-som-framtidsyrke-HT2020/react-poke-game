@@ -1,18 +1,23 @@
 import React, { Component } from "react";
-import Pokedex from "./Pokedex";
+import Pokegame from "./Pokegame";
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Pokedex />
+        <Pokegame />
       </div>
     );
   }
 }
 
 export default App;
+
+// 1. app => browsern
+// 2. Pokegame
+// 3. Pokedex
+// 4. Pokecard
 
 /*
 In this task you need to inlcude 3 components. Include the
